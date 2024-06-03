@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup Page</title>
+    </head>
+    <body>
+        <main>
+            <form>
+                <section>
+                    <label>
+                        Email: 
+                        <input name="email" type="email" pattern=".+@\w+.com" required>
+                    </label>
+                </section>
+                <section>
+                    <label>
+                        Password:
+                        <input type="password" name="password" minlength="8" required />
+                    </label>
+                </section>
+                <section>
+                    <label for="username">Github Username: </label>
+                    <input id="username" name="username" type="text">
+                </section>
+                <section>
+                    <input type="radio" name="edition" value="enterprise">Enterprise
+                    <input type="radio" name="edition" value="pro">Pro
+                    <input type="radio" name="edition" value="free">Free
+                </section>
+                <section>
+                    <label for="remember">Remember Me</label>
+                    <input type="checkbox" name="remember" id="remember">
+                    <br>
+                    <button onclick="alert('Submit Clicked!')" type="submit" id="submit">Login</button>
+                </section>
+            </form>
+        </main>
+        <script>alert("This is a fake login page to practice HTML skills!")</script>
+    </body>
+</html>
